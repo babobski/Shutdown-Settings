@@ -13,4 +13,6 @@ The options:
  * **Minimize last Komodo window**  
  This will mininmize the last Komodo instead of closing it.  
 When using this feature you can close komodo true the menu: **Close > Shutdown Komodo.**
+ * **Do nothing**  
+ This is the same as the default behavior from Komodo.
 
