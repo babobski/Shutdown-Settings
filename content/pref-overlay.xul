@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<prefwindow id="ShutdownSettings-prefs"
+     title="Shutdown Settings"
+	 xmlns:html="http://www.w3.org/1999/xhtml"
+	 width="390"
+	 height="180"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<prefpane id="ShutdownSettings" label="Shutdown Settings">
+		<preferences>
+			<preference id="pref_shutdown" name="extensions.ShutdownSettings.setting" type="string"/>
+		</preferences>
+		<html:h3>
+			Shutdown Settings
+		</html:h3>
+		  
+		<hbox align="center">
+			<label value="On shutdown:"/>
+			<menulist id="shutdown" preference="pref_shutdown" label="On shutdown">
+				<menupopup>
+					<menuitem value="prompt" label="Prompt before closing last Komodo window"/>
+					<menuitem value="minimize" label="Minimize last Komodo window"/>
+					<menuitem value="nothing" label="Do nothing"/>
+				</menupopup>
+			</menulist>
+		</hbox>
+	</prefpane>
+
+</prefwindow>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<overlay id="ShutdownSettings" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+		 width="350" height="120">
+	<script type="application/x-javascript" src="chrome://ShutdownSettings/content/overlay.js" />
+	
+	<commandset id="allcommands">
+	  <command id="Tasks:forceCloseKomodo" oncommand="extensions.ShutdownSettings.forceCloseKomodo();"/>
+    </commandset>
+	
+	<menu id="close_menu">
+		<menupopup id="close_menupopup">
+			<menuitem id="menu_AskBeforeShutdown_file"
+				label="Shutdown Komodo"
+				observes="Tasks:forceCloseKomodo" />
+		</menupopup>
+	</menu>
+</overlay>

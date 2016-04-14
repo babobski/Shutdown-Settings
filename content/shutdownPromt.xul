@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<dialog id="shutdownprompt" title="Shutdown Komodo"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  buttons="cancel,accept"
+  buttonlabelcancel="Cancel"
+  buttonlabelaccept="Ok"
+  width="280"
+  height="100"
+  ondialogaccept="shutdown();" 
+  ondialogcancel="return true;">
+	<script>
+		function shutdown() {
+			var shutSet = window.arguments[0];
+			shutSet.forceCloseKomodo();
+			return true;
+		}
+	</script>
+	<label flex="1" value="Shutdown Komodo?"/>
+</dialog>
