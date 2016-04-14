@@ -8,7 +8,7 @@ You can set it up to prompt, minimize the window or just close the window.
 ## Settings
 You can find the settings under **Tools > Add-ons > Shutdown Settings > options**.  
 The options:
- * **Prompt before closing last Komodo window**  
+ * **Prompt before closing last Komodo window (default)**  
  This will trigger a prompt when closing the last Komodo window if you want to close Komodo.
  * **Minimize last Komodo window**  
  This will mininmize the last Komodo instead of closing it.  
